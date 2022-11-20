@@ -1,0 +1,20 @@
+{
+  "name": "pae_ia_predictive",
+  "version": "1.0.0",
+  "description": "Proyecto PAE Predictive Company",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sel21/PAE_IA_Predictive.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sel21/PAE_IA_Predictive/issues"
+  },
+  "homepage": "https://github.com/sel21/PAE_IA_Predictive#readme"
+}
