@@ -1,5 +1,6 @@
-# PAE_IA_Predictive
-Proyecto PAE Predictive Company
+# PAE IA Predictive
+
+**Proyecto PAE Predictive Company**
 
 > Para arrancar la aplicación primero hemos de ejecutar: 
 
