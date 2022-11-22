@@ -20,6 +20,25 @@ services:
     volumes:
       #volumen dentro del container
       - influxdb_data:/var/lib/influxdb
+
+  grafana:
+    image: grafana/grafana
+    container_name: grafana-server
+    restart: always
+    depends_on:
+      - influxdb
+    environment:
+      - GF_SECURITY_ADMIN_USER=admin
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+      - GF_INSTALL_PLUGINS=
+    links:
+      - influxdb
+    ports:
+      - 3002:3000
+    volumes:
+      - grafana_data:/var/lib/grafana
+
 #primero hemos definido el volumen antes de poder usarlo
 volumes:
+  grafana_data: {}
   influxdb_data:  {}
