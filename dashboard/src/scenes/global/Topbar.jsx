@@ -21,6 +21,7 @@ const Topbar = () => {
         display="flex"
         backgroundColor={colors.primary[400]}
         borderRadius="3px"
+        height="30px"
       >
         <InputBase sx={{ ml: 2, flex: 1 }} placeholder="Search" />
         <IconButton type="button" sx={{ p: 1 }}>
@@ -28,8 +29,23 @@ const Topbar = () => {
         </IconButton>
       </Box>
 
+      <Box
+        display="flex"
+        justifyContent="center"
+        alignItems="center"
+        // backgroundColor="white"
+      >
+        <img
+          alt="profile-user"
+          width="200px"
+          height="100px"
+          src={`../../assets/logo.png`}
+          style={{ cursor: "pointer" }}
+        />
+      </Box>
+
       {/* ICONS */}
-      <Box display="flex">
+      <Box display="flex" height="30px">
         <IconButton onClick={colorMode.toggleColorMode}>
           {theme.palette.mode === "dark" ? (
             <DarkModeOutlinedIcon />
