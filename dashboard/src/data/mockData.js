@@ -1282,7 +1282,7 @@ export const mockGeographyData = [
   },
 ];
 
-export const mockLineData2 = [
+export const powerConsumption = [
   {
     id: "Power consumption",
     color: tokens("dark").blueAccent[300],
@@ -1338,3 +1338,61 @@ export const mockLineData2 = [
     ],
   },
 ];
+
+export const acUsage = [
+  {
+    id: "Power consumption",
+    color: tokens("dark").blueAccent[300],
+    data: [
+      {
+        x: "2022-12-07 08:00",
+        y: 5,
+      },
+      {
+        x: "2022-12-07 08:15",
+        y: 8,
+      },
+      {
+        x: "2022-12-07 08:30",
+        y: 10,
+      },
+      {
+        x: "2022-12-07 08:45",
+        y: 15,
+      },
+      {
+        x: "2022-12-07 09:00",
+        y: 20,
+      },
+      {
+        x: "2022-12-07 09:15",
+        y: 19,
+      },
+      {
+        x: "2022-12-07 09:30",
+        y: 21,
+      },
+      {
+        x: "2022-12-07 09:45",
+        y: 22,
+      },
+      {
+        x: "2022-12-07 10:00",
+        y: 24,
+      },
+      {
+        x: "2022-12-07 10:15",
+        y: 22,
+      },
+      {
+        x: "2022-12-07 10:30",
+        y: 25,
+      },
+      {
+        x: "2022-12-07 10:45",
+        y: 27,
+      },
+    ],
+  },
+];
+

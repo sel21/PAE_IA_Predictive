@@ -1,9 +1,13 @@
 import { ResponsiveLine } from "@nivo/line";
-import { useTheme } from "@mui/material";
-import { tokens } from "../theme";
-import { mockLineData as data } from "../data/mockData";
+import { autocompleteClasses, useTheme } from "@mui/material";
+import { tokens } from "../../theme";
 
-const LineChart = ({ isCustomLineColors = false, isDashboard = false }) => {
+const PowerChart = ({
+  data,
+  isCustomLineColors = false,
+  isDashboard = false,
+  yMaxValue = "auto",
+}) => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
 
@@ -43,13 +47,18 @@ const LineChart = ({ isCustomLineColors = false, isDashboard = false }) => {
           },
         },
       }}
-      colors={isDashboard ? { datum: "color" } : { scheme: "nivo" }} // added
+      colors={() => "#ff0000"}
+      //colors={isDashboard ? { datum: "color" } : { scheme: "nivo" }} // added
       margin={{ top: 50, right: 110, bottom: 50, left: 60 }}
-      xScale={{ type: "point" }}
+      xScale={{
+        type: "time",
+        format: "%Y-%m-%d %H:%M",
+        precision: "minute",
+      }}
       yScale={{
         type: "linear",
-        min: "auto",
-        max: "auto",
+        min: "0",
+        max: yMaxValue,
         stacked: true,
         reverse: false,
       }}
@@ -59,10 +68,9 @@ const LineChart = ({ isCustomLineColors = false, isDashboard = false }) => {
       axisRight={null}
       axisBottom={{
         orient: "bottom",
-        tickSize: 0,
-        tickPadding: 5,
-        tickRotation: 0,
-        legend: isDashboard ? undefined : "transportation", // added
+        format: "%Hh%M",
+        tickValues: "every 15 minutes",
+        legend: isDashboard ? undefined : "Tiempo", // added
         legendOffset: 36,
         legendPosition: "middle",
       }}
@@ -72,7 +80,7 @@ const LineChart = ({ isCustomLineColors = false, isDashboard = false }) => {
         tickSize: 3,
         tickPadding: 5,
         tickRotation: 0,
-        legend: isDashboard ? undefined : "count", // added
+        legend: isDashboard ? undefined : "Potencia consumida (kWh)", // added
         legendOffset: -40,
         legendPosition: "middle",
       }}
@@ -114,4 +122,4 @@ const LineChart = ({ isCustomLineColors = false, isDashboard = false }) => {
   );
 };
 
-export default LineChart;
+export default PowerChart;

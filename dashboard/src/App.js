@@ -41,13 +41,17 @@ function App() {
   </main>
   </div>)
 
-  //reactLocalStorage.remove('Username');
+  
   const username = reactLocalStorage.get("Username");
   console.log(username)
 
-  const login = (<Routes>
-    <Route path="/" element={<Form />} />
-    </Routes>)
+  const login = (
+    <main className="content">
+      <Routes>
+        <Route path="/" element={<Form />} />
+      </Routes>
+    </main>
+    )
 
   return (
     <ColorModeContext.Provider value={colorMode}>

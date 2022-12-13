@@ -7,12 +7,19 @@ import DarkModeOutlinedIcon from "@mui/icons-material/DarkModeOutlined";
 import NotificationsOutlinedIcon from "@mui/icons-material/NotificationsOutlined";
 import SettingsOutlinedIcon from "@mui/icons-material/SettingsOutlined";
 import PersonOutlinedIcon from "@mui/icons-material/PersonOutlined";
+import LoginOutlinedIcon from "@mui/icons-material/LoginOutlined";
 import SearchIcon from "@mui/icons-material/Search";
+import { reactLocalStorage } from "reactjs-localstorage";
 
 const Topbar = () => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
   const colorMode = useContext(ColorModeContext);
+
+  const logout = () => {
+    reactLocalStorage.remove("Username");
+    window.location.reload(false);
+  };
 
   return (
     <Box display="flex" justifyContent="space-between" p={2}>
@@ -61,6 +68,9 @@ const Topbar = () => {
         </IconButton>
         <IconButton>
           <PersonOutlinedIcon />
+        </IconButton>
+        <IconButton onClick={logout}>
+          <LoginOutlinedIcon />
         </IconButton>
       </Box>
     </Box>
