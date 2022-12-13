@@ -1341,7 +1341,7 @@ export const powerConsumption = [
 
 export const acUsage = [
   {
-    id: "Power consumption",
+    id: "AC",
     color: tokens("dark").blueAccent[300],
     data: [
       {
@@ -1396,3 +1396,149 @@ export const acUsage = [
   },
 ];
 
+export const occupation = [
+  {
+    "id": "Planta 0",
+    "data": [
+      {
+        "x": "Train",
+        "y": 83331
+      },
+      {
+        "x": "Subway",
+        "y": -97810
+      },
+      {
+        "x": "Bus",
+        "y": -96851
+      },
+      {
+        "x": "Car",
+        "y": 13498
+      },
+      {
+        "x": "Boat",
+        "y": 85316
+      },
+      {
+        "x": "Moto",
+        "y": -3260
+      },
+      {
+        "x": "Moped",
+        "y": -96462
+      },
+      {
+        "x": "Bicycle",
+        "y": -20393
+      },
+    ]
+  },
+  {
+    "id": "Planta 1",
+    "data": [
+      {
+        "x": "Train",
+        "y": -40751
+      },
+      {
+        "x": "Subway",
+        "y": -63622
+      },
+      {
+        "x": "Bus",
+        "y": -97345
+      },
+      {
+        "x": "Car",
+        "y": 57109
+      },
+      {
+        "x": "Boat",
+        "y": 77019
+      },
+      {
+        "x": "Moto",
+        "y": 93669
+      },
+      {
+        "x": "Moped",
+        "y": 28525
+      },
+      {
+        "x": "Bicycle",
+        "y": -4360
+      },
+    ]
+  },
+  {
+    "id": "Planta 3",
+    "data": [
+      {
+        "x": "Train",
+        "y": -61418
+      },
+      {
+        "x": "Subway",
+        "y": 12333
+      },
+      {
+        "x": "Bus",
+        "y": -84231
+      },
+      {
+        "x": "Car",
+        "y": -75409
+      },
+      {
+        "x": "Boat",
+        "y": -6647
+      },
+      {
+        "x": "Moto",
+        "y": 69158
+      },
+      {
+        "x": "Moped",
+        "y": -46651
+      },
+      {
+        "x": "Bicycle",
+        "y": 83992
+      },
+    ]
+  },
+  {
+    "id": "Planta 4",
+    "data": [
+      {
+        "x": "Train",
+        "y": -7250
+      },
+      {
+        "x": "Subway",
+        "y": -273
+      },
+      {
+        "x": "Bus",
+        "y": -39754
+      },
+      {
+        "x": "Car",
+        "y": -99230
+      },
+      {
+        "x": "Boat",
+        "y": 23668
+      },
+      {
+        "x": "Moto",
+        "y": 74184
+      },
+      {
+        "x": "Moped",
+        "y": -25929
+      },
+    ]
+  },
+]
