@@ -10,7 +10,7 @@ const HeatMap = ({ data /* see data tab */ }) => {
     <ResponsiveHeatMap
       data={data}
       margin={{ top: 60, right: 90, bottom: 60, left: 90 }}
-      valueFormat=">-.2s"
+      // valueFormat=">-.2s"
       xOuterPadding={0.2}
       xInnerPadding={0.2}
       yOuterPadding={0.2}
@@ -38,8 +38,17 @@ const HeatMap = ({ data /* see data tab */ }) => {
           },
         },
         legends: {
-          text: {
-            fill: colors.grey[100],
+          title: {
+            text: {
+              fontSize: 11,
+              fill: "#000000",
+            },
+          },
+          ticks: {
+            text: {
+              fontSize: 11,
+              fill: "#000000",
+            },
           },
         },
         tooltip: {
@@ -59,7 +68,6 @@ const HeatMap = ({ data /* see data tab */ }) => {
         tickSize: 5,
         tickPadding: 5,
         tickRotation: 0,
-        legend: "country",
         legendPosition: "middle",
         legendOffset: 70,
       }}
@@ -67,16 +75,16 @@ const HeatMap = ({ data /* see data tab */ }) => {
         tickSize: 5,
         tickPadding: 5,
         tickRotation: 0,
-        legend: "country",
         legendPosition: "middle",
         legendOffset: -72,
       }}
       colors={{
         type: "diverging",
-        scheme: "red_yellow_blue",
+        scheme: "blues",
+        minValue: 0,
+        maxValue: 50,
         divergeAt: 0.5,
-        minValue: -100000,
-        maxValue: 100000,
+        text: "#ffffff",
       }}
       emptyColor="#555555"
       legends={[
@@ -92,7 +100,7 @@ const HeatMap = ({ data /* see data tab */ }) => {
           tickSpacing: 4,
           tickOverlap: false,
           tickFormat: ">-.2s",
-          title: "Value →",
+          title: "Nº Personas",
           titleAlign: "start",
           titleOffset: 4,
         },

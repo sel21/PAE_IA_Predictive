@@ -1401,36 +1401,12 @@ export const occupation = [
     "id": "Planta 0",
     "data": [
       {
-        "x": "Train",
-        "y": 83331
+        "x": "Sala 1",
+        "y": 8
       },
       {
-        "x": "Subway",
-        "y": -97810
-      },
-      {
-        "x": "Bus",
-        "y": -96851
-      },
-      {
-        "x": "Car",
-        "y": 13498
-      },
-      {
-        "x": "Boat",
-        "y": 85316
-      },
-      {
-        "x": "Moto",
-        "y": -3260
-      },
-      {
-        "x": "Moped",
-        "y": -96462
-      },
-      {
-        "x": "Bicycle",
-        "y": -20393
+        "x": "Despachos",
+        "y": 15
       },
     ]
   },
@@ -1438,36 +1414,49 @@ export const occupation = [
     "id": "Planta 1",
     "data": [
       {
-        "x": "Train",
-        "y": -40751
+        "x": "Sala 1",
+        "y": 10
       },
       {
-        "x": "Subway",
-        "y": -63622
+        "x": "Oficina",
+        "y": 25
       },
       {
-        "x": "Bus",
-        "y": -97345
+        "x": "Despachos",
+        "y": 12
       },
       {
-        "x": "Car",
-        "y": 57109
+        "x": "Comedor",
+        "y": 4
       },
       {
-        "x": "Boat",
-        "y": 77019
+        "x": "S. Reunión",
+        "y": 20
+      },
+    ]
+  },
+  {
+    "id": "Planta 2",
+    "data": [
+      {
+        "x": "Sala 1",
+        "y": 4
       },
       {
-        "x": "Moto",
-        "y": 93669
+        "x": "Oficina",
+        "y": 30
       },
       {
-        "x": "Moped",
-        "y": 28525
+        "x": "Despachos",
+        "y": 17
       },
       {
-        "x": "Bicycle",
-        "y": -4360
+        "x": "Comedor",
+        "y": 5
+      },
+      {
+        "x": "S. Reunión",
+        "y": 14
       },
     ]
   },
@@ -1475,69 +1464,16 @@ export const occupation = [
     "id": "Planta 3",
     "data": [
       {
-        "x": "Train",
-        "y": -61418
+        "x": "Oficina",
+        "y": 35
       },
       {
-        "x": "Subway",
-        "y": 12333
+        "x": "Despachos",
+        "y": 14
       },
       {
-        "x": "Bus",
-        "y": -84231
-      },
-      {
-        "x": "Car",
-        "y": -75409
-      },
-      {
-        "x": "Boat",
-        "y": -6647
-      },
-      {
-        "x": "Moto",
-        "y": 69158
-      },
-      {
-        "x": "Moped",
-        "y": -46651
-      },
-      {
-        "x": "Bicycle",
-        "y": 83992
-      },
-    ]
-  },
-  {
-    "id": "Planta 4",
-    "data": [
-      {
-        "x": "Train",
-        "y": -7250
-      },
-      {
-        "x": "Subway",
-        "y": -273
-      },
-      {
-        "x": "Bus",
-        "y": -39754
-      },
-      {
-        "x": "Car",
-        "y": -99230
-      },
-      {
-        "x": "Boat",
-        "y": 23668
-      },
-      {
-        "x": "Moto",
-        "y": 74184
-      },
-      {
-        "x": "Moped",
-        "y": -25929
+        "x": "S. Reunión",
+        "y": 7
       },
     ]
   },
