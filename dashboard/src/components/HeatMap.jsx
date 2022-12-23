@@ -99,7 +99,7 @@ const HeatMap = ({ data /* see data tab */ }) => {
           tickSize: 3,
           tickSpacing: 4,
           tickOverlap: false,
-          tickFormat: ">-.2s",
+          // tickFormat: ">-.2s",
           title: "Nº Personas",
           titleAlign: "start",
           titleOffset: 4,

@@ -4,6 +4,7 @@ import * as yup from "yup";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import Header from "../../components/Header";
 import { reactLocalStorage } from "reactjs-localstorage";
+import { tokens } from "../../theme";
 
 const Form = () => {
   const isNonMobile = useMediaQuery("(min-width:600px)");
@@ -53,6 +54,7 @@ const Form = () => {
                 gap="30px"
                 gridTemplateColumns="repeat(4, minmax(0, 1fr))"
                 width="500px"
+                // backgroundColor="#141b2d"
                 sx={{
                   "& > div": { gridColumn: isNonMobile ? undefined : "span 4" },
                 }}
