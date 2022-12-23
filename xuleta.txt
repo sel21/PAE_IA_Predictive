@@ -1,4 +1,3 @@
 para arrancar:
 - npm i 
-
-despues node server.js
+- npm start
