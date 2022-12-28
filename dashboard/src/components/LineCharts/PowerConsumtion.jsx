@@ -4,7 +4,7 @@ import { tokens } from "../../theme";
 
 const PowerChart = ({
   data,
-  isCustomLineColors = false,
+  isCustomLineColors = true,
   isDashboard = false,
   yMaxValue = "auto",
 }) => {
@@ -47,8 +47,9 @@ const PowerChart = ({
           },
         },
       }}
-      colors={() => "#ff0000"}
-      //colors={isDashboard ? { datum: "color" } : { scheme: "nivo" }} // added
+      //colors={() => "#87CEFA"}
+      colors={isDashboard ? { datum: "color" } : { scheme: "nivo" }} // added
+      //colors={isDashboard ? { datum: "color" } : { scheme: "category10" }} // added otro color
       margin={{ top: 50, right: 110, bottom: 50, left: 60 }}
       xScale={{
         type: "time",

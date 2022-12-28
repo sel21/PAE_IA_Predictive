@@ -1285,7 +1285,9 @@ export const mockGeographyData = [
 export const powerConsumption = [
   {
     id: "Power consumption",
-    color: tokens("dark").blueAccent[300],
+    color: tokens("green").greenAccent[200],
+    //color: "rgba(0, 0, 0, .5)",
+    //color: "hsl(104, 70%, 50%)",
     data: [
       {
         x: "2022-12-07 08:00",
@@ -1334,6 +1336,91 @@ export const powerConsumption = [
       {
         x: "2022-12-07 10:45",
         y: 100,
+      },
+    ],
+  },
+  {
+    id: "Power consumption2",
+    color: tokens("dark").greenAccent[900],
+    //color: "hsl(12, 0%, 50%)",
+    data: [
+      {
+        x: "2022-12-07 08:00",
+        y: 200,
+      },
+      {
+        x: "2022-12-07 08:15",
+        y: 215,
+      },
+      {
+        x: "2022-12-07 08:30",
+        y: 220,
+      },
+      {
+        x: "2022-12-07 08:45",
+        y: 320,
+      },
+      {
+        x: "2022-12-07 09:00",
+        y: 250,
+      },
+      {
+        x: "2022-12-07 09:15",
+        y: 336,
+      },
+      {
+        x: "2022-12-07 09:30",
+        y: 403,
+      },
+      {
+        x: "2022-12-07 09:45",
+        y: 532,
+      },
+      {
+        x: "2022-12-07 10:00",
+        y: 581,
+      },
+      {
+        x: "2022-12-07 10:15",
+        y: 585,
+      },
+      {
+        x: "2022-12-07 10:30",
+        y: 60,
+      },
+      {
+        x: "2022-12-07 10:45",
+        y: 500,
+      },
+    ],
+  },
+  {
+    id: "Power3",
+    color: tokens("dark").greenAccent[900],
+    //color: "hsl(12, 0%, 50%)",
+    data: [
+      {
+        x: "2022-12-07 08:00",
+        y: 300,
+      },
+      {
+        x: "2022-12-07 08:15",
+        y: 300,
+      },
+    ],
+  },
+  {
+    id: "Power4",
+    color: tokens("dark").greenAccent[900],
+    //color: "hsl(12, 0%, 50%)",
+    data: [
+      {
+        x: "2022-12-07 08:15",
+        y: 20,
+      },
+      {
+        x: "2022-12-07 08:15",
+        y: 30,
       },
     ],
   },
