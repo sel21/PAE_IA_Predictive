@@ -4,6 +4,21 @@ import BarChart from "../../components/BarChart";
 import { powerConsumption as power } from "../../data/mockData";
 import PowerChart from "../../components/LineCharts/PowerConsumtion";
 import React, {useState} from "react";
+import DatePicker from "react-datepicker";
+import 'bootstrap/dist/css/bootstrap.css';
+
+{/* <div class="input-group input-daterange">
+    <input type="text" class="form-control" value="2012-04-05">
+    <div class="input-group-addon">to</div>
+    <input type="text" class="form-control" value="2012-04-19">
+</div> */}
+
+const Example = () => {
+  const [startDate, setStartDate] = useState(new Date());
+  return (
+    <DatePicker selected={startDate} onChange={(date:Date) => setStartDate(date)} />
+  );
+};
 
 const Bar = () => {
   const [date, setDate] = useState("");
@@ -20,12 +35,17 @@ const Bar = () => {
       <Box height="75vh">
         <PowerChart data={power} />
       </Box>
-      {/* <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous"></link> */}
-      <form>
+      {/* <form>
         <label htmlFor="birthday">Birthday:</label>
         <input type="date" id="birthday" name="birthday" onChange={handleChange}></input>
-      </form>
-    </Box>
+      </form> */}
+        <div className="input-group input-daterange">
+          <input type="text" className="form-control" value="2012-04-05"></input>
+          <div className="input-group-addon">to</div>
+          <input type="text" className="form-control" value="2012-04-19"></input>
+        </div>    
+       </Box>
+       
   );
 };
 
