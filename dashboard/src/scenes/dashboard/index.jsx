@@ -5,6 +5,7 @@ import {
   Typography,
   useTheme,
   Grid,
+  Switch,
 } from "@mui/material";
 import { tokens } from "../../theme";
 import DownloadOutlinedIcon from "@mui/icons-material/DownloadOutlined";
@@ -29,7 +30,7 @@ const Dashboard = () => {
         <Header title="DASHBOARD" subtitle="!Bienvenido!" />
 
         <Box>
-          <Button
+          {/* <Button
             sx={{
               backgroundColor: colors.blueAccent[700],
               color: colors.grey[100],
@@ -40,16 +41,24 @@ const Dashboard = () => {
           >
             <DownloadOutlinedIcon sx={{ mr: "10px" }} />
             Descargar Datos
+          </Button> */}
+          <Switch defaultChecked color="secondary" size="medium" />
+          <Button
+            variant="contained"
+            color="secondary"
+            style={{ fontSize: "20px", padding: "20px" }}
+          >
+            Inteligent Air ON
           </Button>
         </Box>
       </Box>
 
-      <Box>
-        <Box padding="10px" width="300px">
-          <Typography fontWeight="bold" color={colors.greenAccent[500]}>
+      <Box display="flex" justifyContent="center" alalignItems="center">
+        {/* <Box display="flex" padding="10px" width="300px">
+          <Typography ography fontWeight="bold" color={colors.greenAccent[500]}>
             Ahorro estimado
           </Typography>
-          <Box display="flex" alignItems="center">
+          <Box display="flex={1}" alignItems="center">
             <Typography
               borderRadius="30px"
               variant="h1"
@@ -60,33 +69,60 @@ const Dashboard = () => {
             </Typography>
             <Typography m="10px">Últimas 24 horas</Typography>
           </Box>
-        </Box>
-        <Box
-          height="400px"
-          width="800px"
-          margin="auto"
-          textAlign="center"
-          padding="10px"
-          marginTop="20px"
+        </Box> */}
+        <div
+          style={{ display: "grid", "grid-template-columns": "repeat(2, 1fr)" }}
         >
-          <Typography fontWeight="bold" color={colors.greenAccent[500]}>
-            Uso de Aire Acondicionado
-          </Typography>
-          <AirChart data={ac}></AirChart>
-        </Box>
-        <Box
-          height="400px"
-          width="800px"
-          margin="auto"
-          textAlign="center"
-          padding="10px"
-          marginTop="20px"
-        >
-          <Typography fontWeight="bold" color={colors.greenAccent[500]}>
-            Ocupación Edificio
-          </Typography>
-          <HeatMap data={occ}></HeatMap>
-        </Box>
+          <Box
+            height="300px"
+            width="600px"
+            margin="auto"
+            textAlign="center"
+            padding="10px"
+            marginTop="20px"
+          >
+            <Typography fontWeight="bold" color={colors.greenAccent[500]}>
+              Uso de Aire Acondicionado
+            </Typography>
+            <AirChart data={ac}></AirChart>
+          </Box>
+          <Box marginTop="10px" height="300px" width="600px" marginLeft="5px">
+            {" "}
+            <img
+              src={`../../assets/tiendeoEdificio.jpg`}
+              alt="error"
+              height="300px"
+              width="600px"
+            ></img>
+          </Box>
+          <Box
+            height="300px"
+            width="600px"
+            margin="auto"
+            textAlign="center"
+            padding="10px"
+            marginTop="20px"
+          >
+            <Typography fontWeight="bold" color={colors.greenAccent[500]}>
+              Ahorro estimado de C02
+            </Typography>
+            <AirChart data={ac}></AirChart>
+          </Box>
+          <Box
+            flex={1}
+            height="300px"
+            width="600px"
+            margin="auto"
+            textAlign="center"
+            padding="10px"
+            marginTop="20px"
+          >
+            <Typography fontWeight="bold" color={colors.greenAccent[500]}>
+              Ocupación Edificio
+            </Typography>
+            <HeatMap data={occ}></HeatMap>
+          </Box>
+        </div>
       </Box>
 
       {/* <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
