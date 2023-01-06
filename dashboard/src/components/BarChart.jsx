@@ -39,7 +39,11 @@ const BarChart = ({ isDashboard = false }) => {
           },
         },
       }}
-      keys={["hot dog", "burger", "sandwich", "kebab", "fries", "donut"]}
+      // hay que cambiar las keys
+      //wifi, blueetooth, regletas corriente, ip's mesa
+      // keys={["hot dog", "burger", "sandwich", "kebab", "fries", "donut"]}
+      keys={["Wifi", "Bluetooth", "Regletas", "IPs_mesa"]}
+      // indexBy="salas"
       indexBy="country"
       margin={{ top: 50, right: 130, bottom: 50, left: 60 }}
       padding={0.3}
@@ -120,6 +124,7 @@ const BarChart = ({ isDashboard = false }) => {
         },
       ]}
       role="application"
+      isInteractive={true}
       barAriaLabel={function (e) {
         return e.id + ": " + e.formattedValue + " in country: " + e.indexValue;
       }}

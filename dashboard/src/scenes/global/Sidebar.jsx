@@ -19,6 +19,7 @@ import MapOutlinedIcon from "@mui/icons-material/MapOutlined";
 import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 import ViewComfyOutlinedIcon from "@mui/icons-material/ViewComfyOutlined";
 import SettingsOutlinedIcon from "@mui/icons-material/SettingsOutlined";
+import ThermostatOutlinedIcon from "@mui/icons-material/ThermostatOutlined";
 import { reactLocalStorage } from "reactjs-localstorage";
 
 const Item = ({ title, to, icon, selected, setSelected }) => {
@@ -201,7 +202,7 @@ const Sidebar = (props) => {
             />
             <Item
               title="Ocupación"
-              to="/pie"
+              to="/occupancy"
               icon={<ViewComfyOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
@@ -210,6 +211,13 @@ const Sidebar = (props) => {
               title="Aire acondicionado"
               to="/line"
               icon={<TimelineOutlinedIcon />}
+              selected={selected}
+              setSelected={setSelected}
+            />
+            <Item
+              title="Clima"
+              to="/weather"
+              icon={<ThermostatOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
             />

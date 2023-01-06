@@ -16,6 +16,8 @@ import { CssBaseline, ThemeProvider } from "@mui/material";
 import { ColorModeContext, useMode } from "./theme";
 import Calendar from "./scenes/calendar/calendar";
 import {reactLocalStorage} from 'reactjs-localstorage';
+import Weather from "./scenes/weather";
+import Occupancy from "./scenes/occupancy";
 
 function App() {
   const [theme, colorMode] = useMode();
@@ -30,12 +32,13 @@ function App() {
       <Route path="/contacts" element={<Contacts />} />
       <Route path="/invoices" element={<Invoices />} />
       <Route path="/bar" element={<Bar />} />
-      <Route path="/pie" element={<Pie />} />
+      <Route path="/occupancy" element={<Occupancy />} />
       <Route path="/line" element={<Line />} />
       <Route path="/faq" element={<FAQ />} />
       <Route path="/calendar" element={<Calendar />} />
       <Route path="/geography" element={<Geography />} />
       <Route path="/dashboard" element={<Dashboard />} />
+      <Route path="/weather" element={<Weather />} />
       <Route path="/" element={<Dashboard />} />
     </Routes>
   </main>
