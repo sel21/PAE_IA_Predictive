@@ -48,7 +48,7 @@ const Dashboard = () => {
             color="secondary"
             style={{ fontSize: "20px", padding: "20px" }}
           >
-            Inteligent Air ON
+            Ahorro activado
           </Button>
         </Box>
       </Box>
@@ -82,7 +82,7 @@ const Dashboard = () => {
             marginTop="20px"
           >
             <Typography fontWeight="bold" color={colors.greenAccent[500]}>
-              Uso de Aire Acondicionado
+              Ahorro estimado
             </Typography>
             <AirChart data={ac}></AirChart>
           </Box>
@@ -104,7 +104,7 @@ const Dashboard = () => {
             marginTop="20px"
           >
             <Typography fontWeight="bold" color={colors.greenAccent[500]}>
-              Ahorro estimado de C02
+              Ahorro de C02
             </Typography>
             <AirChart data={ac}></AirChart>
           </Box>
