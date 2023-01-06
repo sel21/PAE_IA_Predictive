@@ -25,7 +25,6 @@ const Bar = () => {
   //   console.log(date);
   // }
 
-  console.log(power);
   return (
     <Box m="20px">
       <Header title="Bar Chart" subtitle="Simple Bar Chart" />
