@@ -2,7 +2,7 @@ import { ResponsiveLine } from "@nivo/line";
 import { autocompleteClasses, useTheme } from "@mui/material";
 import { tokens } from "../../theme";
 
-const AirChart = ({
+const CO2Chart = ({
   data,
   isCustomLineColors = false,
   isDashboard = false,
@@ -53,9 +53,8 @@ const AirChart = ({
       margin={{ top: 50, right: 110, bottom: 50, left: 60 }}
       xScale={{
         type: "time",
-        // format: "%Y-%m-%d %H:%M",
-        // precision: "minute",
-        format: "%Y-%m-%d",
+        format: "%Y-%m-%d %H:%M",
+        precision: "minute",
       }}
       yScale={{
         type: "linear",
@@ -70,10 +69,8 @@ const AirChart = ({
       axisRight={null}
       axisBottom={{
         orient: "bottom",
-        format: "%m-%d",
-        //format: "D%Hh%M",
-        // tickValues: "every 15 minutes",
-        tickValues: "every day",
+        format: "%Hh%M",
+        tickValues: "every 15 minutes",
         legend: isDashboard ? undefined : "Tiempo", // added
         legendOffset: 36,
         legendPosition: "middle",
@@ -126,4 +123,4 @@ const AirChart = ({
   );
 };
 
-export default AirChart;
+export default CO2Chart;

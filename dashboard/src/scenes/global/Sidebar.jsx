@@ -201,7 +201,7 @@ const Sidebar = (props) => {
               setSelected={setSelected}
             />
             <Item
-              title="Ocupación"
+              title="Lecturas"
               to="/occupancy"
               icon={<ViewComfyOutlinedIcon />}
               selected={selected}

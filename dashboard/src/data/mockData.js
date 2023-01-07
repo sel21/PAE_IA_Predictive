@@ -1,4 +1,5 @@
-import { tokens } from "../theme";
+import { tokens } 
+from "../theme";
 
 export const mockDataTeam = [
   {
@@ -1262,10 +1263,8 @@ export const mockGeographyData = [
 
 export const powerConsumption = [
   {
-    id: "Power consumption",
+    id: "Sala 1",
     color: tokens("green").greenAccent[200],
-    //color: "rgba(0, 0, 0, .5)",
-    //color: "hsl(104, 70%, 50%)",
     data: [
       {
         x: "2022-12-07 08:00",
@@ -1318,7 +1317,7 @@ export const powerConsumption = [
     ],
   },
   {
-    id: "Power consumption2",
+    id: "Despacho",
     color: tokens("dark").greenAccent[900],
     //color: "hsl(12, 0%, 50%)",
     data: [
@@ -1373,7 +1372,7 @@ export const powerConsumption = [
     ],
   },
   {
-    id: "Power3",
+    id: "Oficina",
     color: tokens("dark").greenAccent[900],
     //color: "hsl(12, 0%, 50%)",
     data: [
@@ -1388,7 +1387,22 @@ export const powerConsumption = [
     ],
   },
   {
-    id: "Power4",
+    id: "Comedor ",
+    color: tokens("dark").greenAccent[900],
+    //color: "hsl(12, 0%, 50%)",
+    data: [
+      {
+        x: "2022-12-07 08:15",
+        y: 20,
+      },
+      {
+        x: "2022-12-07 08:15",
+        y: 30,
+      },
+    ],
+  },
+  {
+    id: "S. Reunión ",
     color: tokens("dark").greenAccent[900],
     //color: "hsl(12, 0%, 50%)",
     data: [
@@ -1406,7 +1420,133 @@ export const powerConsumption = [
 
 export const acUsage = [
   {
-    id: "AC",
+    id: "Ahorro en €",
+    color: tokens("dark").blueAccent[300],
+    data: [
+      {
+        x: "2022-12-07",
+        y: 20,
+      },
+      {
+        x: "2022-12-08",
+        y: 4,
+      },
+      {
+        x: "2022-12-09",
+        y: 6,
+      },
+      {
+        x: "2022-12-10",
+        y: 5,
+      },
+      {
+        x: "2022-12-11",
+        y: 8,
+      },
+      {
+        x: "2022-12-12",
+        y: 10,
+      },
+      {
+        x: "2022-12-13",
+        y: 15,
+      },
+      // {
+      //   x: "2022-12-14",
+      //   y: 20,
+      // },
+      // {
+      //   x: "2022-12-15",
+      //   y: 19,
+      // },
+      // {
+      //   x: "2022-12-16",
+      //   y: 21,
+      // },
+      // {
+      //   x: "2022-12-17",
+      //   y: 22,
+      // },
+      // {
+      //   x: "2022-12-18",
+      //   y: 24,
+      // },
+      // {
+      //   x: "2022-12-19",
+      //   y: 22,
+      // },
+      // {
+      //   x: "2022-12-20",
+      //   y: 25,
+      // },
+      // {
+      //   x: "2022-12-21",
+      //   y: 27,
+      // },
+    ],
+  },
+];
+
+export const acUsage2 = [
+  {
+    id: "Lecturas C02",
+    color: tokens("dark").blueAccent[300],
+    data: [
+      {
+        x: "2022-12-07 08:00",
+        y: 5,
+      },
+      {
+        x: "2022-12-07 08:15",
+        y: 8,
+      },
+      {
+        x: "2022-12-07 08:30",
+        y: 10,
+      },
+      {
+        x: "2022-12-07 08:45",
+        y: 15,
+      },
+      {
+        x: "2022-12-07 09:00",
+        y: 20,
+      },
+      {
+        x: "2022-12-07 09:15",
+        y: 19,
+      },
+      {
+        x: "2022-12-07 09:30",
+        y: 21,
+      },
+      {
+        x: "2022-12-07 09:45",
+        y: 22,
+      },
+      {
+        x: "2022-12-07 10:00",
+        y: 24,
+      },
+      {
+        x: "2022-12-07 10:15",
+        y: 22,
+      },
+      {
+        x: "2022-12-07 10:30",
+        y: 25,
+      },
+      {
+        x: "2022-12-07 10:45",
+        y: 27,
+      },
+    ],
+  },
+];
+
+export const acUsage3 = [
+  {
+    id: "AC3",
     color: tokens("dark").blueAccent[300],
     data: [
       {

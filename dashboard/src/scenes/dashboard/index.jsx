@@ -14,9 +14,11 @@ import PowerChart from "../../components/LineCharts/PowerConsumtion";
 import {
   powerConsumption as power,
   acUsage as ac,
+  acUsage2 as co2_mock,
   occupation as occ,
 } from "../../data/mockData";
 import AirChart from "../../components/LineCharts/AirConsumption";
+import CO2Chart from "../../components/LineCharts/c02";
 import HeatMap from "../../components/HeatMap";
 
 const Dashboard = () => {
@@ -84,7 +86,7 @@ const Dashboard = () => {
             <Typography fontWeight="bold" color={colors.greenAccent[500]}>
               Ahorro estimado
             </Typography>
-            <AirChart data={ac}></AirChart>
+            <AirChart data={ac} axisYLegend={"Ahorro en €"}></AirChart>
           </Box>
           <Box marginTop="10px" height="300px" width="600px" marginLeft="5px">
             {" "}
@@ -104,9 +106,9 @@ const Dashboard = () => {
             marginTop="20px"
           >
             <Typography fontWeight="bold" color={colors.greenAccent[500]}>
-              Ahorro de C02
+              Reducción de CO2
             </Typography>
-            <AirChart data={ac}></AirChart>
+            <CO2Chart data={co2_mock} axisYLegend={"Kg C02 ahorrados"} />
           </Box>
           <Box
             flex={1}
