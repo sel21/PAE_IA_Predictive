@@ -61,8 +61,8 @@ const PowerChart = ({
       yScale={{
         type: "linear",
         min: "0",
-        max: yMaxValue,
-        stacked: true,
+        max: "auto",
+        stacked: false,
         reverse: false,
       }}
       yFormat=" >-.2f"
