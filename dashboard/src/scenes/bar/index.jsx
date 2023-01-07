@@ -27,7 +27,7 @@ const Bar = () => {
 
   return (
     <Box m="20px">
-      <Header title="Bar Chart" subtitle="Simple Bar Chart" />
+      <Header title="Energía consumida" subtitle="Por espacios" />
       <Box height="75vh">
         <PowerChart data={power} />
       </Box>
