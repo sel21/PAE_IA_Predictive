@@ -1,9 +1,14 @@
 import { ResponsiveLine } from "@nivo/line";
-import { useTheme } from "@mui/material";
-import { tokens } from "../theme";
-import { mockLineData as data } from "../data/mockData";
+import { autocompleteClasses, useTheme } from "@mui/material";
+import { tokens } from "../../theme";
 
-const LineChart = ({ isCustomLineColors = false, isDashboard = false }) => {
+const CO2Chart = ({
+  data,
+  isCustomLineColors = false,
+  isDashboard = false,
+  yMaxValue = "100",
+  axisYLegend = "Valor por defecto",
+}) => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
 
@@ -43,12 +48,17 @@ const LineChart = ({ isCustomLineColors = false, isDashboard = false }) => {
           },
         },
       }}
-      colors={isDashboard ? { datum: "color" } : { scheme: "nivo" }} // added
+      colors={() => "#0000ff"}
+      //colors={isDashboard ? { datum: "color" } : { scheme: "nivo" }} // added
       margin={{ top: 50, right: 110, bottom: 50, left: 60 }}
-      xScale={{ type: "point" }}
+      xScale={{
+        type: "time",
+        format: "%Y-%m-%d %H:%M",
+        precision: "minute",
+      }}
       yScale={{
         type: "linear",
-        min: "auto",
+        min: "0",
         max: "auto",
         stacked: true,
         reverse: false,
@@ -59,10 +69,9 @@ const LineChart = ({ isCustomLineColors = false, isDashboard = false }) => {
       axisRight={null}
       axisBottom={{
         orient: "bottom",
-        tickSize: 0,
-        tickPadding: 5,
-        tickRotation: 0,
-        legend: isDashboard ? undefined : "transportation", // added
+        format: "%Hh%M",
+        tickValues: "every 15 minutes",
+        legend: isDashboard ? undefined : "Tiempo", // added
         legendOffset: 36,
         legendPosition: "middle",
       }}
@@ -72,7 +81,7 @@ const LineChart = ({ isCustomLineColors = false, isDashboard = false }) => {
         tickSize: 3,
         tickPadding: 5,
         tickRotation: 0,
-        legend: isDashboard ? undefined : "count", // added
+        legend: isDashboard ? undefined : axisYLegend, // added
         legendOffset: -40,
         legendPosition: "middle",
       }}
@@ -114,4 +123,4 @@ const LineChart = ({ isCustomLineColors = false, isDashboard = false }) => {
   );
 };
 
-export default LineChart;
+export default CO2Chart;

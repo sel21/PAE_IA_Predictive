@@ -1,7 +1,7 @@
 import { ResponsiveLine } from "@nivo/line";
 import { useTheme } from "@mui/material";
-import { tokens } from "../theme";
-import { mockLineData2 as data } from "../data/mockData";
+import { tokens } from "../../theme";
+import { mockLineData as data } from "../../data/mockData";
 
 const LineChart = ({ isCustomLineColors = false, isDashboard = false }) => {
   const theme = useTheme();
@@ -45,14 +45,10 @@ const LineChart = ({ isCustomLineColors = false, isDashboard = false }) => {
       }}
       colors={isDashboard ? { datum: "color" } : { scheme: "nivo" }} // added
       margin={{ top: 50, right: 110, bottom: 50, left: 60 }}
-      xScale={{
-        type: "time",
-        format: "%Y-%m-%d %H:%M",
-        precision: "minute",
-      }}
+      xScale={{ type: "point" }}
       yScale={{
         type: "linear",
-        min: "0",
+        min: "auto",
         max: "auto",
         stacked: true,
         reverse: false,
@@ -63,9 +59,10 @@ const LineChart = ({ isCustomLineColors = false, isDashboard = false }) => {
       axisRight={null}
       axisBottom={{
         orient: "bottom",
-        format: "%Hh%M",
-        tickValues: "every 15 minutes",
-        legend: isDashboard ? undefined : "Time", // added
+        tickSize: 0,
+        tickPadding: 5,
+        tickRotation: 0,
+        legend: isDashboard ? undefined : "transportation", // added
         legendOffset: 36,
         legendPosition: "middle",
       }}
@@ -75,7 +72,7 @@ const LineChart = ({ isCustomLineColors = false, isDashboard = false }) => {
         tickSize: 3,
         tickPadding: 5,
         tickRotation: 0,
-        legend: isDashboard ? undefined : "Power consumption(kWh)", // added
+        legend: isDashboard ? undefined : "count", // added
         legendOffset: -40,
         legendPosition: "middle",
       }}

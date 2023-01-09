@@ -39,8 +39,12 @@ const BarChart = ({ isDashboard = false }) => {
           },
         },
       }}
-      keys={["hot dog", "burger", "sandwich", "kebab", "fries", "donut"]}
-      indexBy="country"
+      // hay que cambiar las keys
+      //wifi, blueetooth, regletas corriente, ip's mesa
+      // keys={["hot dog", "burger", "sandwich", "kebab", "fries", "donut"]}
+      keys={["Wifi", "Bluetooth", "Regletas", "IPs_mesa"]}
+      // indexBy="salas"
+      indexBy="Oficina"
       margin={{ top: 50, right: 130, bottom: 50, left: 60 }}
       padding={0.3}
       valueScale={{ type: "linear" }}
@@ -76,7 +80,7 @@ const BarChart = ({ isDashboard = false }) => {
         tickSize: 5,
         tickPadding: 5,
         tickRotation: 0,
-        legend: isDashboard ? undefined : "country", // changed
+        legend: isDashboard ? undefined : "Oficina Principal", // changed
         legendPosition: "middle",
         legendOffset: 32,
       }}
@@ -84,7 +88,7 @@ const BarChart = ({ isDashboard = false }) => {
         tickSize: 5,
         tickPadding: 5,
         tickRotation: 0,
-        legend: isDashboard ? undefined : "food", // changed
+        legend: isDashboard ? undefined : "Dispositivos", // changed
         legendPosition: "middle",
         legendOffset: -40,
       }}
@@ -120,6 +124,7 @@ const BarChart = ({ isDashboard = false }) => {
         },
       ]}
       role="application"
+      isInteractive={true}
       barAriaLabel={function (e) {
         return e.id + ": " + e.formattedValue + " in country: " + e.indexValue;
       }}

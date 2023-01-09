@@ -1,4 +1,5 @@
-import { tokens } from "../theme";
+import { tokens } 
+from "../theme";
 
 export const mockDataTeam = [
   {
@@ -319,81 +320,59 @@ export const mockTransactions = [
 
 export const mockBarData = [
   {
-    country: "AD",
-    "hot dog": 137,
-    "hot dogColor": "hsl(229, 70%, 50%)",
-    burger: 96,
-    burgerColor: "hsl(296, 70%, 50%)",
-    kebab: 72,
-    kebabColor: "hsl(97, 70%, 50%)",
-    donut: 140,
-    donutColor: "hsl(340, 70%, 50%)",
+    Oficina: "Sala 1",
+    Wifi: 15,
+    wifiColor: "hsl(229, 70%, 50%)",
+    Bluetooth: 6,
+    BluetoothColor: "hsl(296, 70%, 50%)",
+    Regletas: 4,
+    RegletasColor: "hsl(97, 70%, 50%)",
+    IPs_mesa: 13,
+    IPs_mesaColor: "hsl(340, 70%, 50%)",
   },
   {
-    country: "AE",
-    "hot dog": 55,
-    "hot dogColor": "hsl(307, 70%, 50%)",
-    burger: 28,
-    burgerColor: "hsl(111, 70%, 50%)",
-    kebab: 58,
-    kebabColor: "hsl(273, 70%, 50%)",
-    donut: 29,
-    donutColor: "hsl(275, 70%, 50%)",
+    Oficina: "Despacho",
+    Wifi: 5,
+    WifiColor: "hsl(307, 70%, 50%)",
+    Bluetooth: 3,
+    BluetoothColor: "hsl(111, 70%, 50%)",
+    Regletas: 5,
+    RegletasColor: "hsl(273, 70%, 50%)",
+    IPs_mesa: 2,
+    IPs_mesaColor: "hsl(275, 70%, 50%)",
   },
   {
-    country: "AF",
-    "hot dog": 109,
-    "hot dogColor": "hsl(72, 70%, 50%)",
-    burger: 23,
-    burgerColor: "hsl(96, 70%, 50%)",
-    kebab: 34,
-    kebabColor: "hsl(106, 70%, 50%)",
-    donut: 152,
-    donutColor: "hsl(256, 70%, 50%)",
+    Oficina: "Oficina",
+    Wifi: 29,
+    WifiColor: "hsl(72, 70%, 50%)",
+    Bluetooth: 8,
+    BluetoothColor: "hsl(96, 70%, 50%)",
+    Regletas: 4,
+    RegletasColor: "hsl(106, 70%, 50%)",
+    IPs_mesa: 5,
+    IPs_mesaColor: "hsl(256, 70%, 50%)",
   },
   {
-    country: "AG",
-    "hot dog": 133,
-    "hot dogColor": "hsl(257, 70%, 50%)",
-    burger: 52,
-    burgerColor: "hsl(326, 70%, 50%)",
-    kebab: 43,
-    kebabColor: "hsl(110, 70%, 50%)",
-    donut: 83,
-    donutColor: "hsl(9, 70%, 50%)",
+    Oficina: "Comedor",
+    Wifi: 13,
+    WifiColor: "hsl(257, 70%, 50%)",
+    Bluetooth: 2,
+    BluetoothColor: "hsl(326, 70%, 50%)",
+    Regletas: 5,
+    RegletasColor: "hsl(110, 70%, 50%)",
+    IPs_mesa: 2,
+    IPs_mesaColor: "hsl(9, 70%, 50%)",
   },
   {
-    country: "AI",
-    "hot dog": 81,
-    "hot dogColor": "hsl(190, 70%, 50%)",
-    burger: 80,
-    burgerColor: "hsl(325, 70%, 50%)",
-    kebab: 112,
-    kebabColor: "hsl(54, 70%, 50%)",
-    donut: 35,
-    donutColor: "hsl(285, 70%, 50%)",
-  },
-  {
-    country: "AL",
-    "hot dog": 66,
-    "hot dogColor": "hsl(208, 70%, 50%)",
-    burger: 111,
-    burgerColor: "hsl(334, 70%, 50%)",
-    kebab: 167,
-    kebabColor: "hsl(182, 70%, 50%)",
-    donut: 18,
-    donutColor: "hsl(76, 70%, 50%)",
-  },
-  {
-    country: "AM",
-    "hot dog": 80,
-    "hot dogColor": "hsl(87, 70%, 50%)",
-    burger: 47,
-    burgerColor: "hsl(141, 70%, 50%)",
-    kebab: 158,
-    kebabColor: "hsl(224, 70%, 50%)",
-    donut: 49,
-    donutColor: "hsl(274, 70%, 50%)",
+    Oficina: "S. Reuniones",
+    Wifi: 21,
+    WifiColor: "hsl(190, 70%, 50%)",
+    Bluetooth: 4,
+    BluetoothColor: "hsl(325, 70%, 50%)",
+    Regletas: 10,
+    RegletasColor: "hsl(54, 70%, 50%)",
+    IPs: 17,
+    IPsColor: "hsl(285, 70%, 50%)",
   },
 ];
 
@@ -1282,10 +1261,174 @@ export const mockGeographyData = [
   },
 ];
 
-export const mockLineData2 = [
+export const powerConsumption = [
   {
-    id: "Power consumption",
-    color: tokens("dark").blueAccent[300],
+    id: "Sala 1",
+    color: tokens("green").greenAccent[200],
+    data: [
+      {
+        x: "2022-12-07 08:00",
+        y: 75,
+      },
+      {
+        x: "2022-12-07 08:15",
+        y: 76,
+      },
+      {
+        x: "2022-12-07 08:30",
+        y: 73,
+      },
+      {
+        x: "2022-12-07 08:45",
+        y: 70,
+      },
+      {
+        x: "2022-12-07 09:00",
+        y: 90,
+      },
+      {
+        x: "2022-12-07 09:15",
+        y: 94,
+      },
+      {
+        x: "2022-12-07 09:30",
+        y: 98,
+      },
+      {
+        x: "2022-12-07 09:45",
+        y: 94,
+      },
+      {
+        x: "2022-12-07 10:00",
+        y: 90,
+      },
+      {
+        x: "2022-12-07 10:15",
+        y: 87,
+      },
+      {
+        x: "2022-12-07 10:30",
+        y: 20,
+      },
+      {
+        x: "2022-12-07 10:45",
+        y: 20,
+      },
+    ],
+  },
+  {
+    id: "Despacho",
+    color: tokens("dark").greenAccent[900],
+    data: [
+      {
+        x: "2022-12-07 08:00",
+        y: 50,
+      },
+      {
+        x: "2022-12-07 08:15",
+        y: 60,
+      },
+      {
+        x: "2022-12-07 08:30",
+        y: 65,
+      },
+      {
+        x: "2022-12-07 08:45",
+        y: 60,
+      },
+      {
+        x: "2022-12-07 09:00",
+        y: 40,
+      },
+      {
+        x: "2022-12-07 09:15",
+        y: 45,
+      },
+      {
+        x: "2022-12-07 09:30",
+        y: 50,
+      },
+      {
+        x: "2022-12-07 09:45",
+        y: 53,
+      },
+      {
+        x: "2022-12-07 10:00",
+        y: 58,
+      },
+      {
+        x: "2022-12-07 10:15",
+        y: 58,
+      },
+      {
+        x: "2022-12-07 10:30",
+        y: 60,
+      },
+      {
+        x: "2022-12-07 10:45",
+        y: 50,
+      },
+    ],
+  },
+  {
+    id: "Oficina",
+    color: tokens("dark").greenAccent[900],
+    //color: "hsl(12, 0%, 50%)",
+    data: [
+      {
+        x: "2022-12-07 08:00",
+        y: 20,
+      },
+      {
+        x: "2022-12-07 08:15",
+        y: 30,
+      },
+      {
+        x: "2022-12-07 08:30",
+        y: 40,
+      },
+      {
+        x: "2022-12-07 08:45",
+        y: 70,
+      },
+      {
+        x: "2022-12-07 09:00",
+        y: 75,
+      },
+      {
+        x: "2022-12-07 09:15",
+        y: 80,
+      },
+      {
+        x: "2022-12-07 09:30",
+        y: 83,
+      },
+      {
+        x: "2022-12-07 09:45",
+        y: 80,
+      },
+      {
+        x: "2022-12-07 10:00",
+        y: 85,
+      },
+      {
+        x: "2022-12-07 10:15",
+        y: 97,
+      },
+      {
+        x: "2022-12-07 10:30",
+        y: 82,
+      },
+      {
+        x: "2022-12-07 10:45",
+        y: 79,
+      },
+    ],
+  },
+  {
+    id: "Comedor ",
+    color: tokens("dark").greenAccent[900],
+    //color: "hsl(12, 0%, 50%)",
     data: [
       {
         x: "2022-12-07 08:00",
@@ -1337,4 +1480,324 @@ export const mockLineData2 = [
       },
     ],
   },
+  {
+    id: "S. Reunión ",
+    color: tokens("dark").greenAccent[900],
+    //color: "hsl(12, 0%, 50%)",
+    data: [
+      {
+        x: "2022-12-07 08:00",
+        y: 101,
+      },
+      {
+        x: "2022-12-07 08:15",
+        y: 115,
+      },
+      {
+        x: "2022-12-07 08:30",
+        y: 120,
+      },
+      {
+        x: "2022-12-07 08:45",
+        y: 120,
+      },
+      {
+        x: "2022-12-07 09:00",
+        y: 150,
+      },
+      {
+        x: "2022-12-07 09:15",
+        y: 180,
+      },
+      {
+        x: "2022-12-07 09:30",
+        y: 183,
+      },
+      {
+        x: "2022-12-07 09:45",
+        y: 160,
+      },
+      {
+        x: "2022-12-07 10:00",
+        y: 140,
+      },
+      {
+        x: "2022-12-07 10:15",
+        y: 160,
+      },
+      {
+        x: "2022-12-07 10:30",
+        y: 160,
+      },
+      {
+        x: "2022-12-07 10:45",
+        y: 100,
+      },
+    ],
+  },
 ];
+
+export const acUsage = [
+  {
+    id: "Ahorro en €",
+    color: tokens("dark").blueAccent[300],
+    data: [
+      {
+        x: "2022-12-07",
+        y: 20,
+      },
+      {
+        x: "2022-12-08",
+        y: 4,
+      },
+      {
+        x: "2022-12-09",
+        y: 6,
+      },
+      {
+        x: "2022-12-10",
+        y: 5,
+      },
+      {
+        x: "2022-12-11",
+        y: 8,
+      },
+      {
+        x: "2022-12-12",
+        y: 10,
+      },
+      {
+        x: "2022-12-13",
+        y: 15,
+      },
+      // {
+      //   x: "2022-12-14",
+      //   y: 20,
+      // },
+      // {
+      //   x: "2022-12-15",
+      //   y: 19,
+      // },
+      // {
+      //   x: "2022-12-16",
+      //   y: 21,
+      // },
+      // {
+      //   x: "2022-12-17",
+      //   y: 22,
+      // },
+      // {
+      //   x: "2022-12-18",
+      //   y: 24,
+      // },
+      // {
+      //   x: "2022-12-19",
+      //   y: 22,
+      // },
+      // {
+      //   x: "2022-12-20",
+      //   y: 25,
+      // },
+      // {
+      //   x: "2022-12-21",
+      //   y: 27,
+      // },
+    ],
+  },
+];
+
+export const acUsage2 = [
+  {
+    id: "Lecturas C02",
+    color: tokens("dark").blueAccent[300],
+    data: [
+      {
+        x: "2022-12-07",
+        y: 45,
+      },
+      {
+        x: "2022-12-08",
+        y: 32,
+      },
+      {
+        x: "2022-12-09",
+        y: 37,
+      },
+      {
+        x: "2022-12-10",
+        y: 35,
+      },
+      {
+        x: "2022-12-11",
+        y: 42,
+      },
+      {
+        x: "2022-12-12",
+        y: 44,
+      },
+      {
+        x: "2022-12-13",
+        y: 48,
+      },
+    ],
+  },
+];
+
+export const acUsage3 = [
+  {
+    id: "ac3",
+    color: tokens("dark").blueAccent[300],
+    data: [
+      {
+        x: "2022-12-07",
+        y: 11.8,
+      },
+      {
+        x: "2022-12-08",
+        y: 11.9,
+      },
+      {
+        x: "2022-12-09",
+        y: 13,
+      },
+      {
+        x: "2022-12-10",
+        y: 15.5,
+      },
+      {
+        x: "2022-12-11",
+        y: 14,
+      },
+      {
+        x: "2022-12-12",
+        y: 16,
+      },
+      {
+        x: "2022-12-13",
+        y: 13,
+      },
+    ],
+  },
+];
+
+//gráfica de humedad relativa 
+export const acUsage4 = [
+  {
+    id: "Humedad exterior en porcentaje",
+    color: tokens("dark").blueAccent[300],
+    data: [
+      {
+        x: "2022-12-07",
+        y: 72,
+      },
+      {
+        x: "2022-12-08",
+        y: 72,
+      },
+      {
+        x: "2022-12-09",
+        y: 60,
+      },
+      {
+        x: "2022-12-10",
+        y: 68,
+      },
+      {
+        x: "2022-12-11",
+        y: 65,
+      },
+      {
+        x: "2022-12-12",
+        y: 70,
+      },
+      {
+        x: "2022-12-13",
+        y: 63,
+      },
+    ],
+  },
+];
+
+
+export const occupation = [
+  {
+    "id": "Planta 0",
+    "data": [
+      {
+        "x": "Sala 1",
+        "y": 8
+      },
+      {
+        "x": "Despachos",
+        "y": 15
+      },
+    ]
+  },
+  {
+    "id": "Planta 1",
+    "data": [
+      {
+        "x": "Sala 1",
+        "y": 10
+      },
+      {
+        "x": "Oficina",
+        "y": 25
+      },
+      {
+        "x": "Despachos",
+        "y": 12
+      },
+      {
+        "x": "Comedor",
+        "y": 4
+      },
+      {
+        "x": "S. Reunión",
+        "y": 20
+      },
+    ]
+  },
+  {
+    "id": "Planta 2",
+    "data": [
+      {
+        "x": "Sala 1",
+        "y": 4
+      },
+      {
+        "x": "Oficina",
+        "y": 30
+      },
+      {
+        "x": "Despachos",
+        "y": 17
+      },
+      {
+        "x": "Comedor",
+        "y": 5
+      },
+      {
+        "x": "S. Reunión",
+        "y": 14
+      },
+    ]
+  },
+  {
+    "id": "Planta 3",
+    "data": [
+      {
+        "x": "Oficina",
+        "y": 35
+      },
+      {
+        "x": "Despachos",
+        "y": 14
+      },
+      {
+        "x": "S. Reunión",
+        "y": 7
+      },
+    ]
+  },
+]

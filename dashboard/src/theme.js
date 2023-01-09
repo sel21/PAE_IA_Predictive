@@ -141,7 +141,8 @@ export const themeSettings = (mode) => {
               light: colors.grey[100],
             },
             background: {
-              default: colors.primary[500],
+              default: colors.primary[400],
+              //default: "white"
             },
           }
         : {
@@ -199,7 +200,7 @@ export const ColorModeContext = createContext({
 });
 
 export const useMode = () => {
-  const [mode, setMode] = useState("dark");
+  const [mode, setMode] = useState("light");
 
   const colorMode = useMemo(
     () => ({
