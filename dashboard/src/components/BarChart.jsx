@@ -88,7 +88,7 @@ const BarChart = ({ isDashboard = false }) => {
         tickSize: 5,
         tickPadding: 5,
         tickRotation: 0,
-        legend: isDashboard ? undefined : "food", // changed
+        legend: isDashboard ? undefined : "Dispositivos", // changed
         legendPosition: "middle",
         legendOffset: -40,
       }}

@@ -2,11 +2,11 @@ import { ResponsiveLine } from "@nivo/line";
 import { autocompleteClasses, useTheme } from "@mui/material";
 import { tokens } from "../../theme";
 
-const AirChart = ({
+const WeatherChart = ({
   data,
   isCustomLineColors = false,
   isDashboard = false,
-  yMaxValue = "auto",
+  yMaxValue = "100",
   axisYLegend = "Valor por defecto",
 }) => {
   const theme = useTheme();
@@ -53,15 +53,13 @@ const AirChart = ({
       margin={{ top: 50, right: 110, bottom: 50, left: 60 }}
       xScale={{
         type: "time",
-        // format: "%Y-%m-%d %H:%M",
-        // precision: "minute",
         format: "%Y-%m-%d",
       }}
       yScale={{
         type: "linear",
         min: "0",
         max: "auto",
-        stacked: false,
+        stacked: true,
         reverse: false,
       }}
       yFormat=" >-.2f"
@@ -71,8 +69,6 @@ const AirChart = ({
       axisBottom={{
         orient: "bottom",
         format: "%m-%d",
-        //format: "D%Hh%M",
-        // tickValues: "every 15 minutes",
         tickValues: "every day",
         legend: isDashboard ? undefined : "Tiempo", // added
         legendOffset: 36,
@@ -126,4 +122,4 @@ const AirChart = ({
   );
 };
 
-export default AirChart;
+export default WeatherChart;

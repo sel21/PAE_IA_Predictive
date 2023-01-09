@@ -108,7 +108,11 @@ const Dashboard = () => {
             <Typography fontWeight="bold" color={colors.greenAccent[500]}>
               Reducción de CO2
             </Typography>
-            <CO2Chart data={co2_mock} axisYLegend={"Kg C02 ahorrados"} />
+            <AirChart
+              data={co2_mock}
+              axisYLegend={"Kg C02 ahorrados"}
+              yMaxValue={"50"}
+            />
           </Box>
           <Box
             flex={1}

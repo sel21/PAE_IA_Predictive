@@ -11,13 +11,13 @@ import { tokens } from "../../theme";
 import DownloadOutlinedIcon from "@mui/icons-material/DownloadOutlined";
 import Header from "../../components/Header";
 import PowerChart from "../../components/LineCharts/PowerConsumtion";
+// import { acUsage as ac} from "../../data/mockData";
 import {
-  powerConsumption as power,
   acUsage as ac,
-  occupation as occ,
+  acUsage3 as ac3,
+  acUsage4 as ac4,
 } from "../../data/mockData";
 import AirChart from "../../components/LineCharts/AirConsumption";
-import HeatMap from "../../components/HeatMap";
 
 const Weather = () => {
   const theme = useTheme();
@@ -61,7 +61,7 @@ const Weather = () => {
             <Typography fontWeight="bold" color={colors.greenAccent[500]}>
               Temperatura exterior
             </Typography>
-            <AirChart data={ac}></AirChart>
+            <AirChart data={ac3}></AirChart>
           </Box>
           <Box
             height="300px"
@@ -73,9 +73,9 @@ const Weather = () => {
           >
             {" "}
             <Typography fontWeight="bold" color={colors.greenAccent[500]}>
-              Presión Atmosférica
+              Humedad relativa
             </Typography>
-            <AirChart data={ac}></AirChart>
+            <AirChart data={ac4}></AirChart>
           </Box>
           <Box
             height="300px"
@@ -84,12 +84,7 @@ const Weather = () => {
             textAlign="center"
             padding="10px"
             marginTop="20px"
-          >
-            {/* <Typography fontWeight="bold" color={colors.greenAccent[500]}>
-              Presión Atmosférica
-            </Typography>
-            <AirChart data={ac}></AirChart> */}
-          </Box>
+          ></Box>
           <Box
             height="300px"
             width="600px"
@@ -97,27 +92,9 @@ const Weather = () => {
             textAlign="center"
             padding="10px"
             marginTop="20px"
-          >
-            {/* <Typography fontWeight="bold" color={colors.greenAccent[500]}>
-              Humedad
-            </Typography>
-            <AirChart data={ac}></AirChart> */}
-          </Box>
+          ></Box>
         </div>
       </Box>
-
-      {/* <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
-          <Grid item xs={6}>
-            <Box height="400px" width="600px">
-              <PowerChart data={power}></PowerChart>
-            </Box>
-          </Grid>
-          <Grid item xs={6}>
-            <Box height="400px" width="600px">
-              <PowerChart data={power}></PowerChart>
-            </Box>
-          </Grid>
-        </Grid> */}
     </Box>
   );
 };
