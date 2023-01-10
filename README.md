@@ -1,9 +1,10 @@
 # PAE IA Predictive
 
-**Proyecto PAE Predictive Company**
-**Jabar Latif**
-**Daniel Ardévol**
-**Andrés Güizzo**
+**Proyecto PAE Predictive Company**  
+
+**Jabar Latif**  
+**Daniel Ardévol**  
+**Andrés Güizzo**  
 
 > Para arrancar la aplicación primero hemos de ejecutar: 
 
