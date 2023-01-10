@@ -174,14 +174,14 @@ const Sidebar = (props) => {
             </Typography>
             <Item
               title="Perfil"
-              to="/form"
+              to="/dashboard"
               icon={<PersonOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
             />
             <Item
               title="Configuracion"
-              to="/calendar"
+              to="/dashboard"
               icon={<SettingsOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
@@ -209,7 +209,7 @@ const Sidebar = (props) => {
             />
             <Item
               title="Aire acondicionado"
-              to="/line"
+              to="/dashboard"
               icon={<TimelineOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
@@ -223,7 +223,7 @@ const Sidebar = (props) => {
             />
             <Item
               title="Histórico"
-              to="/geography"
+              to="/dashboard"
               icon={<MapOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
@@ -244,7 +244,7 @@ const Sidebar = (props) => {
             />
             <Item
               title="Contactanos"
-              to="/faq"
+              to="/dashboard"
               icon={<EmailOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
