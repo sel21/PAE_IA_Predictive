@@ -1,3 +1,0 @@
-para arrancar:
-- npm i 
-- npm start
