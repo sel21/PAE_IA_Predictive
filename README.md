@@ -1,30 +1,18 @@
 # PAE IA Predictive
 
 **Proyecto PAE Predictive Company**
+**Jabar Latif**
+**Daniel Ardévol**
+**Andrés Güizzo**
 
 > Para arrancar la aplicación primero hemos de ejecutar: 
 
-1. Instalar dependencias:
+1. Instalar dependencias en la carpeta dashboard:
 ```
 npm install  
 ```
-2. Arrancar la aplicación con node server.js 
+2. Arrancar la aplicación  
 ```
-node server.js
-```
-
-> Arrancar la aplicación usando Docker:
-
-1. Instalar dependencias
-```
-npm install
-```
-2. Crear Docker
-```
-docker build . -t node-web-app
+npm start
 ```
 
-3. Arrancar Docker (puerto 3000 porque lo tenemos asi en AWS)
-```
-docker run -p 3000:8080 -d node-web-app
-```
